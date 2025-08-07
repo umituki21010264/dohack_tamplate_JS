@@ -1,0 +1,205 @@
+
+.circle{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(-90deg);
+    width: 95vw;
+    height: 95vw;
+    max-width: 95vh;
+    max-height: 95vh;
+}
+
+#center{
+    fill:#333333;
+    stroke:none;
+}
+
+#ne {
+fill:none;
+stroke:#e90800;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+}
+
+#ushi {
+fill:none;
+stroke:#00a0e9;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:100;
+}
+
+#tora {
+fill:none;
+stroke:#d6e900;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:95.84;
+}
+#u {
+fill:none;
+stroke:#e90800;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:91.68;
+}
+
+#tatu {
+fill:none;
+stroke:#00a0e9;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:87.52;
+}
+
+#mi {
+fill:none;
+stroke:#d6e900;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:83.36;
+}
+#uma {
+fill:none;
+stroke:#e90800;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:79.2;
+}
+
+#hituji {
+fill:none;
+stroke:#00a0e9;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:75.04;
+}
+
+#saru {
+fill:none;
+stroke:#d6e900;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:70.88;
+}
+#tori {
+fill:none;
+stroke:#e90800;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:66.72;
+}
+
+#inu {
+fill:none;
+stroke:#00a0e9;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:62.56;
+}
+
+#i {
+fill:none;
+stroke:#d6e900;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:58.4;
+}
+#ane {
+fill:none;
+stroke:#e90800;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:54.24;
+}
+
+#aushi {
+fill:none;
+stroke:#00a0e9;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:50.08;
+}
+
+#atora {
+fill:none;
+stroke:#d6e900;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:45.92;
+}
+#au {
+fill:none;
+stroke:#e90800;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:41.76;
+}
+
+#atatu {
+fill:none;
+stroke:#00a0e9;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:37.6;
+}
+
+#ami {
+fill:none;
+stroke:#d6e900;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:33.44;
+}
+#auma {
+fill:none;
+stroke:#e90800;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:29.28;
+}
+
+#ahituji {
+fill:none;
+stroke:#00a0e9;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:25.12;
+}
+
+#asaru {
+fill:none;
+stroke:#d6e900;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:20.96;
+}
+#atori {
+fill:none;
+stroke:#e90800;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:16.8;
+}
+
+#ainu {
+fill:none;
+stroke:#00a0e9;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:12.64;
+}
+
+#ai {
+fill:none;
+stroke:#d6e900;
+stroke-width:14;
+stroke-dasharray:4.16,100;
+stroke-dashoffset:8.48;
+}
+
+

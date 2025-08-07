@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja"></html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOHACK_1</title>
+    <link rel="stylesheet" href="css/circle.css" />
+    <link rel="stylesheet" href="css/clock.css" />
+</head>
+<body>
+    <div id="ClockDisplay" class="clock" onload="showTime()"></div>
+
+    <div style="text-align: center;">     
+        <svg class="circle" viewBox = "0 0 64 64">
+            <circle id = "center" cx = "50%" cy = "50%" r = "2"/>
+            <circle id = "ne" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "ushi" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "tora" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "u" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "tatu" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "mi" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "uma" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "hituji" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "saru" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "tori" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "inu" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "i" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "ane" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "aushi" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "atora" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "au" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "atatu" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "ami" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "auma" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "ahituji" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "asaru" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "atori" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "ainu" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle id = "ai" cx = "50%" cy = "50%" r = "15.9154"/>
+        </svg>
+    </div>
+    <div id="container">
+        <div id="clock">
+            <div id="hour"></div>
+            <div id="minute"></div>
+        </div>
+    </div>
+
+    <script src="js/analog_clock.js"></script>
+    <script src="js/digital_clock.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+
+#container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 95vw;
+  height: 95vw;
+  max-width: 95vh;
+  max-height: 95vh;
+}
+
+#clock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+#hour {
+  position: absolute;
+  background: transparent;
+  transform-origin: bottom;
+}
+
+#hour {
+  border-radius: 10000px;
+  width: 3%;
+  height: 25%;
+  top: 25%;
+  left: 48.5%;
+}
+
+
+
+.clock {
+    position: absolute;
+    top: 10%;
+    left:50%;
+    transform: translateX(-50%)translateY(-50%);
+    color: #555;
+    font-size: 18px;
+    letter-spacing: 7px;
+}
