@@ -1,3 +1,8 @@
-body {
-  background-color: #9fd2ff; /* 背景色を薄い青に設定 */
+body{
+    background-color:rgb(255, 253, 221);
+}
+
+#box1{
+    fill:#ffffff;
+    stroke:none;
 }
