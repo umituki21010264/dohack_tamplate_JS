@@ -9,14 +9,19 @@
     <link rel="stylesheet" href="css/style2.css" />
 </head>
 <body>
+    <div style="text-align:center">
+    <h2>Day Dial</h2>
+    <br>
     <div id="ClockDisplay" class="clock" onload="showTime()"></div>
 
-    <div style="text-align: center;">     
+    <div style="text-align: center">     
         <svg class="circle" viewBox = "0 0 64 64">
             <circle id = "box1" cx = "50%" cy = "50%" r = "24"/>
-            <circle id = "center" cx = "50%" cy = "50%" r = "2"/>
-            <circle id = "ne" cx = "50%" cy = "50%" r = "15.9154"/>
-            <circle id = "ushi" cx = "50%" cy = "50%" r = "15.9154"/>
+
+            <circle id = "center" cx = "50%" cy = "50%" r = "2" />
+
+            <circle class="clickable" id = "ne" cx = "50%" cy = "50%" r = "15.9154"/>
+            <circle class="clickable" id = "ushi" cx = "50%" cy = "50%" r = "15.9154"/>
             <circle id = "tora" cx = "50%" cy = "50%" r = "15.9154"/>
             <circle id = "u" cx = "50%" cy = "50%" r = "15.9154"/>
             <circle id = "tatu" cx = "50%" cy = "50%" r = "15.9154"/>
@@ -47,8 +52,14 @@
             <div id="minute"></div>
         </div>
     </div>
+    
+    <a href="memo.html"class="button2">To Do List</a>
+
+   
 
     <script src="js/analog_clock.js"></script>
     <script src="js/digital_clock.js"></script>
+    <script src="js/graph_rabel.js"></script>
+    </div>
 </body>
 </html>

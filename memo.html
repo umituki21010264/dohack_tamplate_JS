@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>To Do List</title>
+  
+</head>
+<body>
+  <h1>To Do List</h1>
+
+  <input type="text" id="itemInput" placeholder="項目を入力してください" />
+  <button onclick="addItem()">追加</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>完了</th>
+        <th>項目名</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody id="checklistTableBody"></tbody>
+  </table>
+
+  <script>
+    const storageKey = "checklistTableItems";
+
+    function loadChecklist() {
+      const saved = localStorage.getItem(storageKey);
+      if (saved) {
+        const items = JSON.parse(saved);
+        items.forEach((item) => createTableRow(item.text, item.checked));
+      }
+    }
+
+    function saveChecklist() {
+      const items = [];
+      document.querySelectorAll("#checklistTableBody tr").forEach((row) => {
+        const checkbox = row.querySelector("input[type='checkbox']");
+        const text = row.querySelector("td:nth-child(2)").textContent.trim();
+        items.push({ text, checked: checkbox.checked });
+      });
+      localStorage.setItem(storageKey, JSON.stringify(items));
+    }
+
+    function createTableRow(text, checked = false) {
+      const tbody = document.getElementById("checklistTableBody");
+      const row = document.createElement("tr");
+
+      // チェックボックスセル
+      const checkboxCell = document.createElement("td");
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.checked = checked;
+      checkbox.addEventListener("change", saveChecklist);
+      checkboxCell.appendChild(checkbox);
+
+      // 項目名セル
+      const textCell = document.createElement("td");
+      textCell.textContent = text;
+
+      // 削除ボタンセル
+      const deleteCell = document.createElement("td");
+      const deleteBtn = document.createElement("button");
+      deleteBtn.textContent = "削除";
+      deleteBtn.className = "delete-btn";
+      deleteBtn.addEventListener("click", () => {
+        row.remove();
+        saveChecklist();
+      });
+      deleteCell.appendChild(deleteBtn);
+
+      // 行にセルを追加
+      row.appendChild(checkboxCell);
+      row.appendChild(textCell);
+      row.appendChild(deleteCell);
+
+      tbody.appendChild(row);
+    }
+
+    function addItem() {
+      const input = document.getElementById("itemInput");
+      const value = input.value.trim();
+      if (value === "") return;
+
+      createTableRow(value, false);
+      saveChecklist();
+
+      input.value = "";
+      input.focus();
+    }
+
+    // ページ読み込み時に保存データをロード
+    window.addEventListener("load", loadChecklist);
+  </script>
+  <a href="index2.html"class="button2">時計に戻る</a>
+  <link rel="stylesheet" href="css/memo.css" />
+  <link rel="stylesheet" href="css/style2.css" />
+</body>
+</html>
+

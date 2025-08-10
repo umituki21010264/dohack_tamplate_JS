@@ -6,3 +6,26 @@ body{
     fill:#ffffff;
     stroke:none;
 }
+h2{
+    font-family:"Arial";
+}
+.button2{
+    position: absolute;
+    top: 60;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	background-color:#87ceeb;
+	color:white;
+	padding:20px 45px;
+	text-align:center;
+	text-decoration:none;
+	font-size:20px;
+	font-family:Arial;
+	border-radius:50px;
+	
+}
+.button2:hover{
+	background-color:#afeeee;
+	color:#4682b4;
+}

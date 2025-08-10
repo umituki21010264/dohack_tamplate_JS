@@ -1,0 +1,45 @@
+body {
+      font-family: Arial;
+      margin: 2em;
+    }
+
+    input[type="text"] {
+      padding: 0.5em;
+      width: 300px;
+    }
+
+    button {
+      padding: 0.5em 1em;
+      margin-left: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+
+    th,
+    td {
+      border: 1px solid #4682b4;
+      padding: 0.5em;
+      text-align: left;
+    }
+
+    th {
+      background-color: #87ceeb;
+    }
+
+    .delete-btn {
+      color: #fff;
+      background-color: #d9534f;
+      border: none;
+      padding: 0.3em 0.6em;
+      cursor: pointer;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+
+    .delete-btn:hover {
+      background-color: #c9302c;
+    }
